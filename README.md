@@ -1,7 +1,8 @@
 # maorDevOps
 Jenkins Tasks Part 1 
 
-Task 1: Create a Freestyle Project to Print "Hello World"
+#Task 1:
+Create a Freestyle Project to Print "Hello World"
 Open Jenkins and create a new Freestyle project.
 In the "Build Steps" section:
 ●	Add an "Execute Shell" step (or "Execute Windows Batch Command" on Windows).
