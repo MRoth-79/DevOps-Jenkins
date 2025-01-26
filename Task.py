@@ -7,13 +7,13 @@ data = json.loads(Task)
 
 #---------------------------------------------------------------------#
 ##Task 1 : Print the name of the company.
-print('Company Name:', data['company'])
+print('\n1) Company Name:', data['company'])
 
 #---------------------------------------------------------------------#
 #Task 2: Print the name of each employee along with the total number of hours they have spent across all projects.
 for employee in data['employees']:
     total_hours = sum(project['hours_spent'] for project in employee['projects'])
-    print(f"{employee['name']} - Total hours spent on projects: {total_hours} h")
+    print(f"{employee['name']} -> Total hours spent on projects: {total_hours} h")
 
 #---------------------------------------------------------------------#
 #Task 3: Print the department with the highest total project hours.
