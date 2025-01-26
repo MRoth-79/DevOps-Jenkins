@@ -5,7 +5,7 @@
   "employees": [
     {
       "id": 1,
-      "name": "Alice",
+      "name": "Maor",
       "department": "Engineering",
       "projects": [
         {"project_id": 101, "name": "Project A", "hours_spent": 120},
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "name": "Bob",
+      "name": "Avivit",
       "department": "Marketing",
       "projects": [
         {"project_id": 103, "name": "Project C", "hours_spent": 40}
@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "name": "Charlie",
+      "name": "Roth",
       "department": "Engineering",
       "projects": [
         {"project_id": 104, "name": "Project D", "hours_spent": 200},
