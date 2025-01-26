@@ -47,4 +47,4 @@ for employee in data['employees']:
     if any(project['hours_spent'] > 100 for project in employee['projects']):
         employees_more_than_100_hours.append(employee['name'])
 
-print(' , '.join(employees_more_than_100_hours))
+print('' , '.join(employees_more_than_100_hours)\n')
