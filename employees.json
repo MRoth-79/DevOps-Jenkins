@@ -37,7 +37,7 @@
       "name": "Roth",
       "department": "Engineering",
       "projects": [
-        {"project_id": 106, "name": "Project F", "hours_spent": 180},
+        {"project_id": 106, "name": "Project F", "hours_spent": 80},
         {"project_id": 107, "name": "Project G", "hours_spent": 15}
       ],
       "skills": ["Java", "Spring", "Docker"]
