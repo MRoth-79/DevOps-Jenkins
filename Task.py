@@ -13,6 +13,7 @@ print('\n1) Company Name:', data['company'])
 #Task 2: Print the name of each employee along with the total number of hours they have spent across all projects.
 for employee in data['employees']:
     total_hours = sum(project['hours_spent'] for project in employee['projects'])
+    print('\n2) Peoples names - hours spent on projects: ')
     print(f"{employee['name']} -> Total hours spent on projects: {total_hours} h")
 
 #---------------------------------------------------------------------#
@@ -28,17 +29,17 @@ for employee in data['employees']:
 
 # Find the department with the highest hours
 highest_department = max(department_hours, key=department_hours.get)
-print('\nThe Department with Highest Total Project Hours:', highest_department)
+print('\n3) The Department with Highest Total Project Hours: \n', highest_department)
 
 #---------------------------------------------------------------------#
 # Task 4: Print the names of all employees who have "Python" as a skill
-print('\nEmployees with Python Skill: ')
+print('\n4) Employees with Python Skill: ')
 python_skill_employees = [employee['name'] for employee in data['employees'] if 'Python' in employee['skills']]
 print(', '.join(python_skill_employees))
 
 #---------------------------------------------------------------------#
 # Task 5: Print the names of employees who worked on projects with more than 100 hours spent
-print('\nEmployees who Worked on Projects with More than 100 Hours Spent: ')
+print('\n5) Employees who Worked on Projects with More than 100 Hours Spent: ')
 employees_more_than_100_hours = []
 for employee in data['employees']:
     if any(project['hours_spent'] > 100 for project in employee['projects']):
