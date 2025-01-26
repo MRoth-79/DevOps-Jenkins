@@ -18,7 +18,7 @@ for employee in data['employees']:
 
 #---------------------------------------------------------------------#
 
-Task 3: Print the department with the highest total project hours.
+#Task 3: Print the department with the highest total project hours.
 department_hours = {}
 for employee in data['employees']:
     total_hours = sum(project['hours_spent'] for project in employee['projects'])
@@ -30,7 +30,7 @@ for employee in data['employees']:
 
 # Find the department with the highest hours
 highest_department = max(department_hours, key=department_hours.get)
-print('\n3) The Department with Highest Total Project Hours: \n ', highest_department)
+print('\n3) The Department with Highest Total Project Hours: ', highest_department)
 
 #---------------------------------------------------------------------#
 
