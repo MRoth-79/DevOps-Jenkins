@@ -29,7 +29,7 @@ for employee in data['employees']:
 
 # Find the department with the highest hours
 highest_department = max(department_hours, key=department_hours.get)
-print('\n3) The Department with Highest Total Project Hours: \n', highest_department)
+print('\n3) The Department with Highest Total Project Hours: \n ', highest_department)
 
 #---------------------------------------------------------------------#
 # Task 4: Print the names of all employees who have "Python" as a skill
