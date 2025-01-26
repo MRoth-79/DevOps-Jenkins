@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "name": "Roth",
+      "name": "Elon",
       "department": "Engineering",
       "projects": [
         {"project_id": 104, "name": "Project D", "hours_spent": 200},
