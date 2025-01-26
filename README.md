@@ -44,4 +44,20 @@ Create a Jenkins pipeline that includes the following:
 ●	Stage 2: Clone a Git repository from a URL provided by the user.
 Use pipeline parameters to capture user inputs for the message and the Git repository URL.
 Ensure that the pipeline is functional and outputs the expected results.
+
+Task 7: User Choice Parameter
+Add a new Stage,
+In the new stage add choice parameter to your pipeline with the name ENVIRONMENT:
+The choices should be: dev, stage, production.
+Give a short description to explain that this parameter allows the user to select the environment where the pipeline will run(not more than one sentence).
+Inside this stage, print the selected environment using the value of the ENVIRONMENT parameter
+Example: If the user selects stage, the output should say: “You selected stage”
+
+Task 8: Boolean Parameter for Deployment
+Add a new Stage,
+In the new stage, add boolean parameter to your pipeline with the name DEPLOY:
+Set its default value to true.
+Add a description explaining that this parameter decides whether the pipeline should proceed with deployment.
+If DEPLOY is true, print - “Boolean flag is true, deployment will proceed."
+If DEPLOY is false, print - "Boolean flag is false, skipping deployment."
  
