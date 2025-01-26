@@ -11,9 +11,9 @@ print('\n1) Company Name:', data['company'])
 
 #---------------------------------------------------------------------#
 #Task 2: Print the name of each employee along with the total number of hours they have spent across all projects.
+print('\n2) Peoples names - hours spent on projects: ')
 for employee in data['employees']:
     total_hours = sum(project['hours_spent'] for project in employee['projects'])
-    print('\n2) Peoples names - hours spent on projects: ')
     print(f"{employee['name']} -> Total hours spent on projects: {total_hours} h")
 
 #---------------------------------------------------------------------#
