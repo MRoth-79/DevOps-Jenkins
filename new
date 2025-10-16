@@ -1,1 +1,229 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גברברי גבים: המסע הגדול</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* הגדרת פונט כללי ורקע כהה */
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f7f3e8; /* רקע שמנת בהיר */
+        }
+        /* קונטיינר הכרזה הראשי */
+        .poster {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff; /* לבן נקי */
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 4px solid #1e40af; /* גבול כחול עמוק */
+        }
+        /* עיצוב כותרות וקווים מפרידים */
+        .title-primary {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #d97706; /* כתום-זהב חם */
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1e40af; /* כחול כהה */
+            border-bottom: 2px solid #16a34a; /* קו הפרדה ירוק */
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        /* עיצוב פריטי לוח זמנים */
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        .time-badge {
+            flex-shrink: 0;
+            width: 70px; /* רוחב קבוע לשעה */
+            text-align: center;
+            padding: 4px 8px;
+            border-radius: 8px;
+            background-color: #16a34a; /* ירוק חזק */
+            color: white;
+            font-weight: 700;
+            margin-left: 1rem;
+            box-shadow: 0 2px 5px rgba(22, 163, 74, 0.5);
+        }
+        .time-description {
+            flex-grow: 1;
+            padding-right: 0.5rem;
+            border-right: 2px dotted #e5e7eb;
+        }
+        /* קטע עלות */
+        .cost-card {
+            background-color: #fffbeb; /* צהוב בהיר */
+            border: 2px solid #d97706;
+            border-radius: 12px;
+        }
+        /* רספונסיביות לטורים */
+        @media (max-width: 768px) {
+            .poster {
+                padding: 1rem;
+                margin: 1rem auto;
+            }
+            .title-primary {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="rtl text-right">
+
+    <div class="poster">
+        <!-- כותרת ראשית וסלוגן -->
+        <header class="text-center mb-10">
+            <h1 class="title-primary">גברברי גבים: המסע הגדול <span class="text-red-600">📢</span></h1>
+            <p class="text-xl mt-3 text-gray-700 font-medium">השגרה מאחורינו, הטבע לפנינו. מתכוננים לחוויה שלא תשכחו.</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- יום 1: חמישי, 13 בנובמבר 2025 -->
+            <section class="p-4 md:p-6 bg-gray-50 rounded-xl shadow-lg">
+                <h2 class="subtitle">יום חמישי, 13 בנובמבר 2025: יוצאים מהשגרה</h2>
+                <div class="mt-6 space-y-4">
+                    
+                    <div class="timeline-item">
+                        <div class="time-badge">09:30</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">נפגשים בכניסה ליער צרעה</p>
+                            <p class="text-sm text-gray-600">הגעה עצמית, מתדלקים עם קפה ומתכננים איך לשרוד את היום. ☕</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-badge">10:00</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">סיור רכוב ורגלי במסלול הפסלים</p>
+                            <p class="text-sm text-gray-600">שמים גז (בזהירות!) ויוצאים. כולל מדריך, סיפורי מורשת והסבר על הפסלים. 🏞️</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-badge">13:00</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">עצירה באנדרטת נתיב הל"ה</p>
+                            <p class="text-sm text-gray-600">נקבל הסבר ונריע לגיבורים. 🫡</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-badge">13:30</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">פינוק חך: יקבי עמק האלה</p>
+                            <p class="text-sm text-gray-600">טעימות יין 🍷 וכיבוד כיד השף. אל תנהגו אם טעמתם יותר מדי!</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-badge">15:30</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">מעבר למקום הלינה</p>
+                            <p class="text-sm text-gray-600">נוסעים (או הולכים) אל חאן נתיב'לה. 🚗</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="time-badge">15:35</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">התמקמות ומנוחה בחאן נתיב'לה</p>
+                            <p class="text-sm text-gray-600">שחרור לחצים ובעיקר – מתכוננים לערב הגדול. 🏕️</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-badge" style="background-color: #d9534f;">20:00</div>
+                        <div class="time-description">
+                            <p class="font-bold text-red-600">שיא הערב: פסטיבל הבשרים 🔥</p>
+                            <p class="text-sm text-gray-600">נדליק את המנגל, ארוחת על האש רצינית. תכינו את עצמכם לטורניר שש-בש מטורף ועוד שלל משחקים מצחיקים! 🎲</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- יום 2: שישי, 14 בנובמבר 2025 + עלויות -->
+            <section class="p-4 md:p-6 bg-gray-50 rounded-xl shadow-lg flex flex-col justify-between">
+                <div>
+                    <h2 class="subtitle">יום שישי, 14 בנובמבר 2025: בוקר של אלופים</h2>
+                    <p class="text-md text-gray-700 mt-2 mb-6">יום חדש, כוחות חדשים. נסיים את הטיול בסטייל, כי לכל דבר טוב חייב להיות סוף.</p>
+                    
+                    <div class="timeline-item">
+                        <div class="time-badge">09:00</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">ארוחת בוקר מפנקת</p>
+                            <p class="text-sm text-gray-600">למי שעוד נשאר מקום. 🍳</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-badge">10:30</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">סיבוב הליכה קצר</p>
+                            <p class="text-sm text-gray-600">לסכם את הטיול באווירה טובה. 🚶</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-badge">12:00</div>
+                        <div class="time-description">
+                            <p class="font-bold text-gray-800">פרידה וחזרה הביתה</p>
+                            <p class="text-sm text-gray-600">חוזרים עם זיכרונות חזקים וחיוך ענק על הפנים. 👋</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- עלויות -->
+                <div class="cost-card p-4 mt-6">
+                    <h2 class="subtitle text-2xl mb-4 text-center"> כמה זה עולה לנו לאחר ספסוד<span class="text-red-500">💸</span>???</h2>
+ 
+                    <div class="text-lg font-bold text-gray-800 mb-2">
+                        <p class="border-b border-yellow-400 pb-2">
+                            <span class="text-3xl text-green-600 ml-2">300₪</span>
+                           לכל הטיול.
+                        </p>
+                        <p class="text-sm font-normal text-gray-600 mt-1">הכי שווה בעולם לקחת את זה!!!</p>
+
+                    </div>
+
+                    <div class="text-lg font-bold text-gray-800 mb-4">
+                        <p class="border-b border-yellow-400 pb-2">
+                            <span class="text-2xl text-green-500 ml-2">250₪</span>
+                              למי שלא יכול להגיע לפינוק ביקב.
+                        </p>
+                    </div>
+
+                    <div class="mt-4 p-3 bg-yellow-100 rounded-lg">
+                        <p class="font-bold text-sm text-yellow-800">העלות כוללת:</p>
+                        <ul class="text-sm text-yellow-800 list-disc pr-5 mt-1">
+                            <li>סיור בגן הפסלים</li>
+                            <li>טעימות יין 🍷</li>
+                            <li>לינה בחאן נתיב'לה 🏕️</li>
+                            <li>ארוחת ערב מטורפת 🍖 וארוחת בוקר מפנקת 🍳</li>
+                        </ul>
+                        <p class="text-xs font-bold mt-2 text-red-600">
+                            **לא כולל דלק:** תדאגו לנסוע עם חבר שמוכן לשלם על הדלק... 😉
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="mt-10 pt-4 border-t border-gray-200 text-center text-gray-500 text-sm">
+            <p>לפרטים נוספים ואישור הגעה, אנא פנו למאור רוט 050-7532966.</p>
+        </div>
+    </div>
+
+</body>
+</html>
 new new
